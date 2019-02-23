@@ -1,0 +1,21 @@
+.navbar{
+  margin-bottom: 0;
+}
+.nav-ul-right{
+  min-width: 230px;
+}
+#slider_left .li_bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page_main{
+  margin-left: 0;
+}
+@media (min-width:768px){
+  #slider_left{
+    width: 235px;
+    position: absolute;
+  }
+  .page_main{
+    margin-left: 236px;
+  }
+}

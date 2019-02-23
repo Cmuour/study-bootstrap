@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap.css">
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+
+<!-- 头部 -->
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="javascript:;" class="navbar-brand">Cmuour</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href=""><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right nav-ul-right">
+      <li class="dropdown col-xs-6">
+        <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          admin
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a href=""><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+          <li><a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+        </ul>
+      </li>
+      <li class="col-xs-6"><a href=""><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+    </ul>
+  </div>
+  
+  <!-- 侧边栏 -->
+  <div class="navbar-default" id="slider_left">
+    <ul class="nav">
+      <!-- 搜索 -->
+      <li>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <div class="input-group-btn">
+            <button class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+        </div>
+      </li>
+      <!-- 折叠 -->
+      <li class="li_bottom">
+        <a href="#sub1" data-toggle="collapse">
+          系统设置
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub1">
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub2" data-toggle="collapse">
+          栏目功能
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub2">
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub3" data-toggle="collapse">
+          产品功能
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub3">
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub4" data-toggle="collapse">
+          新闻功能
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub4">
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- 头部 -->
+
+<!-- 路径导航 -->
+<div class="page_main">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+  </ol>
+  <div class="container col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">订单状况</div>
+          <div class="panel-body">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>#</th><th>订单号</th><th>订单日期</th><th>总价</th><th>状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>3</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>4</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>5</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>6</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">订单状况</div>
+          <div class="panel-body">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>#</th><th>订单号</th><th>订单日期</th><th>总价</th><th>状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>3</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>4</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>5</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>6</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">订单状况</div>
+          <div class="panel-body">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>#</th><th>订单号</th><th>订单日期</th><th>总价</th><th>状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>3</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>4</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>5</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+                <tr>
+                  <td>6</td><td>123456</td><td>2019-02-23</td><td>2630</td><td>出库</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 路径导航 -->
+
+<script src="../jquery.js"></script>
+<script src="../bootstrap.js"></script>
+</body>
+</html>
