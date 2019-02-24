@@ -10,9 +10,13 @@
 .page_main{
   margin-left: 0;
 }
+.li_bottom ul li{
+  background: #FAFAFA;
+}
 @media (min-width:768px){
   #slider_left{
     width: 235px;
+    height: 600px;
     position: absolute;
   }
   .page_main{

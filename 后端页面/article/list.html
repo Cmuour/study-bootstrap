@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../bootstrap.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+<!-- 头部 -->
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="javascript:;" class="navbar-brand">Cmuour</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href=""><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right nav-ul-right">
+      <li class="dropdown col-xs-6">
+        <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          admin
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a href=""><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+          <li><a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+        </ul>
+      </li>
+      <li class="col-xs-6"><a href=""><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+    </ul>
+  </div>
+  
+  <!-- 侧边栏 -->
+  <div class="navbar-default" id="slider_left">
+    <ul class="nav">
+      <!-- 搜索 -->
+      <li>
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="search for...">
+          <div class="input-group-btn">
+            <button class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+        </div>
+      </li>
+      <!-- 折叠 -->
+      <li class="li_bottom">
+        <a href="../index.html">首页</a>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub1" data-toggle="collapse">
+          <span class="glyphicon glyphicon-cog"></span>
+          &nbsp;&nbsp;系统设置
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub1">
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub2" data-toggle="collapse">
+          <span class="glyphicon glyphicon-user"></span>
+          &nbsp;&nbsp;用户管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub2">
+          <li><a href="../user/userlist.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;用户列表</a></li>
+          <li><a href="../user/add.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加用户</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub3" data-toggle="collapse">
+          <span class="iconfont icon-daily"></span>
+          &nbsp;&nbsp;文章管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub3">
+          <li><a href="./list.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;分类列表</a></li>
+          <li><a href="./articlelist.html">&nbsp;&nbsp;&nbsp;<span class="iconfont icon-book"></span>&nbsp;&nbsp;文章列表</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub4" data-toggle="collapse">
+          <span class="glyphicon glyphicon-picture"></span>
+          &nbsp;&nbsp;轮播管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub4">
+          <li><a href="../focus/list.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;轮播列表</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub5" data-toggle="collapse">
+          <span class="glyphicon glyphicon-send"></span>
+          &nbsp;&nbsp;导航管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub5">
+          <li><a href="../nav/list.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;轮播列表</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub6" data-toggle="collapse">
+          <span class="glyphicon glyphicon-link"></span>
+          &nbsp;&nbsp;友情链接管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub6">
+          <li><a href="../link/list.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;轮播列表</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- 头部 -->
+
+<!-- 文章分类模板 -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加分类</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="POST" id="addUser">
+          <div class="form-group">
+            <label for="username">分类名称:</label>
+            <input type="text" class="form-control" id="username" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label for="classify">选择分类:</label>
+            <select class="form-control">
+              <option>顶级分类</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="keywords">关键字:</label>
+            <input type="text" class="form-control" id="keywords" placeholder="keywords">
+          </div>
+          <div class="form-group">
+            <label for="description">描述:</label>
+            <textarea rows="3" class="form-control"  placeholder="Description of classification" id="description"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">关闭</button>
+        <button type="submit" form="addUser" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 文章分类模板 -->
+
+
+<!-- 路径导航 -->
+<div class="page_main">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+  </ol>
+  <div class="container col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div>
+          <div class="col-md-2 col-sm-2 col-xs-2 add_article_btn">
+            <button class="btn btn-default" data-toggle="modal" data-target="#myModal">添加分类</button>
+          </div>
+          <div class="col-md-5 col-sm-5 col-xs-5 pull-right article-search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="文章分类搜索">
+              <div class="input-group-btn">
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>				
+              <th>内容分类</th><th>添加时间</th><th>排序</th><th>状态</th><th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>1</td><td>1</td><td>1</td>
+              <td>
+                <div class="dropdown">
+                  <button id="dLabel" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    操作
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="">锁定</a></li>
+                    <li><a href="" role="button" data-toggle="modal" data-target="#myModal">编辑</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">删除</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td><td>1</td><td>1</td><td>1</td>
+              <td>
+                <div class="dropdown">
+                  <button id="dLabel" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    操作
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="">锁定</a></li>
+                    <li><a href="" role="button" data-toggle="modal" data-target="#myModal">编辑</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">删除</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td><td>1</td><td>1</td><td>1</td>
+              <td>
+                <div class="dropdown">
+                  <button id="dLabel" class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    操作
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="">锁定</a></li>
+                    <li><a href="" role="button" data-toggle="modal" data-target="#myModal">编辑</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="">删除</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 路径导航 -->
+
+<script src="../../jquery.js"></script>
+<script src="../../bootstrap.js"></script>
+</body>
+</html>

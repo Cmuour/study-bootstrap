@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../bootstrap.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+<!-- 头部 -->
+<nav class="navbar navbar-inverse">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="javascript:;" class="navbar-brand">Cmuour</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href=""><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;首页</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;占位</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right nav-ul-right">
+      <li class="dropdown col-xs-6">
+        <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          admin
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a href=""><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+          <li><a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+        </ul>
+      </li>
+      <li class="col-xs-6"><a href=""><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+    </ul>
+  </div>
+  
+  <!-- 侧边栏 -->
+  <div class="navbar-default" id="slider_left">
+    <ul class="nav">
+      <!-- 搜索 -->
+      <li>
+        <div class="input-group">
+          <input type="text" class="form-control"  placeholder="search for...">
+          <div class="input-group-btn">
+            <button class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+        </div>
+      </li>
+      <!-- 折叠 -->
+      <li class="li_bottom">
+        <a href="../index.html">首页</a>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub1" data-toggle="collapse">
+          <span class="glyphicon glyphicon-cog"></span>
+          &nbsp;&nbsp;系统设置
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub1">
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;系统设置</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;管理员信息</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub2" data-toggle="collapse">
+          <span class="glyphicon glyphicon-user"></span>
+          &nbsp;&nbsp;用户管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub2">
+          <li><a href="./userlist.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;用户列表</a></li>
+          <li><a href="./add.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加用户</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+      <li class="li_bottom">
+        <a href="#sub3" data-toggle="collapse">
+          <span class="iconfont icon-daily"></span>
+          &nbsp;&nbsp;文章管理
+          <span class="glyphicon glyphicon-menu-right pull-right"></span>
+        </a>
+        <ul class="nav collapse" id="sub3">
+          <li><a href="../articlecate/list.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;分类列表</a></li>
+          <li><a href="../articlecate/add.html">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;添加分类</a></li>
+          <li><a href="javascript:;">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;日志信息</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- 头部 -->
+
+<!-- 路径导航 -->
+<div class="page_main">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+  </ol>
+  <div class="container user_form col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-md-10 col-sm-10">
+        <form action="#" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-md-3 col-sm-3 control-label">用户名称:</label>
+            <div class="col-md-9 col-sm-9">
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-3 control-label">用户密码:</label>
+            <div class="col-md-9 col-sm-9">
+              <input type="text" class="form-control" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 col-sm-3 control-label">确认密码:</label>
+            <div class="col-md-9 col-sm-9">
+              <input type="text" class="form-control" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="pull-right user_btn_right">
+              <input type="submit" value="提交" class="btn btn-default">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 路径导航 -->
+
+<script src="../../jquery.js"></script>
+<script src="../../bootstrap.js"></script>
+</body>
+</html>
